@@ -82,8 +82,21 @@ a {
     text-decoration: none;
     cursor: url("../img/greenCursor.png"), auto;
 }
- 
-/* Death Star (Main container) */
+
+/* Main Container */
+#mainContainerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Death Star */
 .deathStarDiv {
     display: flex;
     justify-content: center;
@@ -126,7 +139,7 @@ a {
 }
 .startButtonDiv:hover h1 {
     color: rgb(0, 255, 89);
-    animation: starButtonGlow 2s ease-in-out 2s infinite; 
+    animation: starButtonGlow 2s ease-in-out 2s infinite;
 }
 @keyframes starButtonGlow {
     0%, 100% {
